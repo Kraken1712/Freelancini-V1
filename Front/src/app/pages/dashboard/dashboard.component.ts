@@ -28,13 +28,13 @@ export class DashboardComponent implements OnInit {
   test: String = "chihimek";
 
   //Ena zedtou !!!!
-  constructor(private projectService: ProjectService) {}
+  // constructor(private projectService: ProjectService) {}
   ////////////
 
   ngOnInit() {
 
     //Ena zedtha !!!!
-    this.listProjects();
+    // this.listProjects();
     /////////////////////
 
     this.datasets = [
@@ -74,12 +74,12 @@ export class DashboardComponent implements OnInit {
   }
 
   //Ena zedtha !!!!
-   listProjects(){
-    this.projectService.getProjectList().subscribe(
-      data => {
-        this.projects = data;
-      }
-    )
-  }
+  //  listProjects(){
+  //   this.projectService.getProjectList().subscribe(
+  //     data => {
+  //       this.projects = data;
+  //     }
+  //   )
+  // }
 
 }
